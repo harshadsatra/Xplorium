@@ -1,0 +1,110 @@
+/* Variables */
+$color-black: #000;
+$color-white : #fff;
+$color-offwhite:#fffcf8;
+$color-offblack:#505050;
+$color-blue : #4e4e70;
+$color-red : #ff8076;
+
+$break-small: 550px;
+$break-medium: 786px;
+$break-large: 1200px;
+$border-radius:15px;
+$block-padding:30px;
+
+/* font properties */
+$fs10: 10px;
+$fs12: 12px;
+$fs14: 14px;
+$fs16: 16px;
+.fs10 {font-size: $fs10;}
+.fs12 {font-size: $fs12;}
+.fs14 {font-size: $fs14;}
+.fs16 {font-size: $fs16;}
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  transition: $property;
+}
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  border-radius:50px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+  border-radius:50px;
+}
+/* Imports */
+@import 'normalize';
+@import 'slick';
+@import 'slick-theme';
+
+/*
+	FONTS:
+	font-family: 'Rozha One', serif;
+	font-family: 'Nunito', sans-serif;
+	font-family: 'Arapey', serif;
+*/
+
+/* Typography */
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+	color:$color-black;
+	font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6{ font-family: 'Rozha One', serif;font-weight: normal}
+
+/* General CSS */
+.text-center{text-align:center;}
+.text-right{text-align:right;}
+.text-left{text-align:left;}
+.h100{height:100vh;}
+.img-center{display:block;margin:0 auto}
+img{max-width:100%;}
+
+.bold{font-weight: 600;}
+
+
+/* Header */
+
+/* Footer */
+
+/* Pointers */
+.pointers{
+	list-style: none;
+}
+
+/* Accordians */
+
+/* CTA */
+
+
+
+
+@media screen and (max-width: 500px) {
+
+}
+
+
+
+
