@@ -748,6 +748,7 @@ th {
 
 body {
   font-family: 'Nunito', sans-serif;
+  background: #fffcf8;
   color: #000;
   font-weight: normal; }
 
@@ -778,11 +779,45 @@ img {
 .bold {
   font-weight: 600; }
 
+.color-red {
+  color: #ff8076; }
+
+.link {
+  color: #ff8076;
+  text-decoration: none; }
+
 /* Header */
+.main-header {
+  padding: 50px 0;
+  position: absolute;
+  background: #fffcf8;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+
 /* Footer */
+.main-footer {
+  padding: 20px 0; }
+
 /* Pointers */
+.main-pointers {
+  margin-top: 190px; }
+
 .pointers {
-  list-style: none; }
+  list-style: none;
+  font-size: 4rem;
+  font-family: 'Rozha One', serif; }
+  .pointers li {
+    margin-top: -35px; }
+    .pointers li span {
+      line-height: 0; }
+    .pointers li .left {
+      color: #505050;
+      margin-right: 5px; }
+    .pointers li .right {
+      color: #8c8c8c;
+      margin-left: 5px; }
 
 /* Accordians */
 /* CTA */

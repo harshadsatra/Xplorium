@@ -4,6 +4,7 @@ $color-white : #fff;
 $color-offwhite:#fffcf8;
 $color-offblack:#505050;
 $color-blue : #4e4e70;
+$color-gray : #8c8c8c;
 $color-red : #ff8076;
 
 $break-small: 550px;
@@ -68,7 +69,8 @@ $fs16: 16px;
 	padding: 0;
 }
 body{
-    font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', sans-serif;
+	background: $color-offwhite;
 	color:$color-black;
 	font-weight: normal;
 }
@@ -85,13 +87,51 @@ img{max-width:100%;}
 .bold{font-weight: 600;}
 
 
+.color-red{color: $color-red;}
+
+.link{
+	color: $color-red;
+	text-decoration: none;
+}
+
 /* Header */
+.main-header{
+	padding:50px 0;
+	position: absolute;
+	background: $color-offwhite;
+	width: 100%;
+	top:0;
+	left: 0;
+	z-index: 100;
+}
 
 /* Footer */
+.main-footer{
+	padding:20px 0;
+}
 
 /* Pointers */
+.main-pointers{
+	margin-top:190px;
+}
 .pointers{
 	list-style: none;
+	font-size: 4rem;
+	font-family: 'Rozha One', serif;
+	li{
+		margin-top:-35px;
+		span{
+			line-height: 0;
+		}
+		.left{
+			color: $color-offblack;
+			margin-right:5px;
+		}
+		.right{
+			color: $color-gray;
+			margin-left:5px;
+		}
+	}
 }
 
 /* Accordians */
