@@ -68,13 +68,22 @@ $fs16: 16px;
 	margin:0;
 	padding: 0;
 }
+html{font-size:16px;}
 body{
 	font-family: 'Nunito', sans-serif;
 	background: $color-offwhite;
 	color:$color-black;
 	font-weight: normal;
+	font-size: 2.5rem;
+	color: $color-offblack;
+	font-weight: 2	00;
 }
-h1, h2, h3, h4, h5, h6{ font-family: 'Rozha One', serif;font-weight: normal}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Rozha One', serif;font-weight: normal;
+	line-height: 0.9;
+	margin-bottom: 30px;
+}
+p{margin-bottom:30px}
 
 /* General CSS */
 .text-center{text-align:center;}
@@ -84,8 +93,14 @@ h1, h2, h3, h4, h5, h6{ font-family: 'Rozha One', serif;font-weight: normal}
 .img-center{display:block;margin:0 auto}
 img{max-width:100%;}
 
+.mb-0{margin-bottom: 0;}
+
 .bold{font-weight: 600;}
 
+.font-italic{
+	font-family: 'Arapey', serif;
+	font-style: italic;
+}
 
 .color-red{color: $color-red;}
 
@@ -94,32 +109,52 @@ img{max-width:100%;}
 	text-decoration: none;
 }
 
+.fill-btn{
+	display: block;
+	margin:0 auto;
+	width: fit-content;
+	padding: 5px 30px;
+	background: $color-red;
+	border:solid 1px $color-red;
+	color: $color-offwhite;
+	font-size: 1.8rem;
+	text-decoration: none;
+	font-family: 'Rozha One', serif;
+	&:hover{
+		background: $color-offwhite;
+		color: $color-red;
+	}
+}
+
 /* Header */
 .main-header{
 	padding:50px 0;
-	position: absolute;
+	position: fixed;
 	background: $color-offwhite;
 	width: 100%;
 	top:0;
 	left: 0;
 	z-index: 100;
+	font-size: 1rem;
 }
 
 /* Footer */
 .main-footer{
 	padding:20px 0;
+	font-size:1rem;
+	p{margin-bottom: 0;}
 }
 
 /* Pointers */
 .main-pointers{
-	margin-top:190px;
+	margin:250px auto;
 }
 .pointers{
 	list-style: none;
-	font-size: 4rem;
+	font-size: 5rem;
 	font-family: 'Rozha One', serif;
 	li{
-		margin-top:-35px;
+		margin-top:-55px;
 		span{
 			line-height: 0;
 		}
@@ -134,10 +169,104 @@ img{max-width:100%;}
 	}
 }
 
+/* Introduction */
+.text-rotate{
+    transform: rotate(90deg) translateX(50%) translateY(262px);
+    display: block;
+    position: absolute;
+    left: 0px;
+    font-size: 1rem;
+    width: 500px;
+    margin-top: 5px;
+}
+
 /* Accordians */
+.accordian-section{
+	padding: 50px 0;
+	position: relative;
+	&:before{
+		content:'';
+		display: block;
+		height:5px;
+		width: 100%;
+		border-bottom:solid 1px $color-offblack;
+		border-top:solid 1px $color-offblack;
+		position: absolute;
+		bottom:0;
+	}
+	.accordian-title,.accordian-content{
+		width: 50%;
+	}
+	.accordian-title{
+		color: $color-red;
+		margin-bottom:0;
+	}
+	.accordian-btn{
+		color: $color-red;
+		position: relative;
+		font-size: 2rem;
+		cursor: pointer;
+	}
+	.accordian-content{
+		display: none;
+		p:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* Popup */
+.popup{
+	background: rgba(255,255,255,0.4);
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	z-index: 200;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	@include transition(0.3s ease all);
+	&.active{
+		visibility: visible;
+		opacity: 1;
+		pointer-events: all;
+	}
+}
+.cta-block{
+	width: 300px;
+	height:500px;
+	position: relative;
+	background: $color-offwhite;
+	border:solid 1px $color-offblack;
+	margin:0 auto;
+	display: block;
+	padding:30px;
+	h3{
+		font-size: 3rem;
+	}
+	p{
+		font-size: 0.7rem;
+	}
+	.fill-btn{
+		position: absolute;
+		bottom:50px;
+		left:0;
+		right:0;
+		margin:auto;
+	}
+
+}
 
 /* CTA */
+.cta-section{
+	margin:250px auto;
+}
 
+.trigger{
+	color: $color-red;
+}
 
 
 
