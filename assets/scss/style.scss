@@ -76,7 +76,10 @@ body{
 	font-weight: normal;
 	font-size: 2.5rem;
 	color: $color-offblack;
-	font-weight: 2	00;
+	font-weight: 200;
+	&.loading{
+		overflow: hidden;
+	}
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Rozha One', serif;font-weight: normal;
@@ -126,16 +129,93 @@ img{max-width:100%;}
 	}
 }
 
+
+.hiddenBlock{
+	font-size:30px;
+	opacity: 0;
+	font-family: 'Arapey', serif;
+    font-style: italic;
+	.part2{
+		opacity: 0;
+		&.active{
+			opacity: 1;
+		}
+	}
+	&.active{
+		opacity: 1;
+	}
+}
+
+.headingBlock{
+	height: 150vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+	opacity: 0;
+	@include transition(0.3s ease all);
+	&.active{
+		opacity: 1;
+	}
+	.step2{
+		opacity: 0;
+		@include transition(0.3s ease all);
+		&.active{
+			opacity: 1;	
+		}
+	}
+	
+	.activator,.deactivator{
+		width: 100%;
+		height: 1px;
+		display: block;
+		position: absolute;
+		top:25%;
+	}
+	.deactivator{top:75%;}
+	.show-1{top:0}
+	.hide-2{top:100%}
+}
+
 /* Header */
 .main-header{
-	padding:50px 0;
 	position: fixed;
 	background: $color-offwhite;
 	width: 100%;
 	top:0;
+	height: 158px;
 	left: 0;
 	z-index: 100;
 	font-size: 1rem;
+	@include transition(1s ease all);
+	.row{
+		padding:50px 0;
+	}
+	.container,.row{
+		height: 100%;
+	}
+	.font-italic,.logo{
+		opacity: 1;
+		@include transition(0.3s ease all);
+	}
+	#headerTitle{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		color: $color-red;
+	}
+	#logo{
+		width: 350px;
+		margin: 0 auto;
+		display: block;
+	}
+	&.on-load{
+		height:100%;
+		.font-italic,.logo{
+			opacity: 0;
+		}
+	}
 }
 
 /* Footer */
@@ -171,13 +251,14 @@ img{max-width:100%;}
 
 /* Introduction */
 .text-rotate{
-    transform: rotate(90deg) translateX(50%) translateY(262px);
+    transform: rotate(-90deg) translateX(-50%) translateY(-271px);
     display: block;
     position: absolute;
     left: 0px;
     font-size: 1rem;
     width: 500px;
     margin-top: 5px;
+    text-align: right;
 }
 
 /* Accordians */
@@ -193,13 +274,14 @@ img{max-width:100%;}
 		border-top:solid 1px $color-offblack;
 		position: absolute;
 		bottom:0;
+		display: none;
 	}
 	.accordian-title,.accordian-content{
 		width: 50%;
 	}
 	.accordian-title{
 		color: $color-red;
-		margin-bottom:0;
+		margin-bottom:30px;
 	}
 	.accordian-btn{
 		color: $color-red;
@@ -257,6 +339,30 @@ img{max-width:100%;}
 		margin:auto;
 	}
 
+}
+
+/* Background Block */
+#scrollActivator{
+	z-index: 2;
+	position: relative;
+}
+.background-block{
+	position: fixed;
+	top:0;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
+	.bg-content{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
 }
 
 /* CTA */
