@@ -868,7 +868,7 @@ img {
 
 /* Header */
 .main-header {
-  position: fixed;
+  position: relative;
   background: #fffcf8;
   width: 100%;
   top: 0;
@@ -911,7 +911,7 @@ img {
 
 /* Pointers */
 .main-pointers {
-  margin: 250px auto; }
+  margin: 130px auto 250px; }
 
 .pointers {
   list-style: none;
@@ -964,7 +964,8 @@ img {
     font-size: 2rem;
     cursor: pointer; }
   .accordian-section .accordian-content {
-    display: none; }
+    display: none;
+    display: block; }
     .accordian-section .accordian-content p:last-child {
       margin-bottom: 0; }
 
@@ -1025,7 +1026,9 @@ img {
   flex-direction: column;
   z-index: 1; }
   .background-block .bg-content {
-    display: none; }
+    display: none;
+    align-self: flex-end;
+    margin-right: 100px; }
     .background-block .bg-content.active {
       display: block; }
 

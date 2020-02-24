@@ -185,7 +185,7 @@ img{max-width:100%;}
 
 /* Header */
 .main-header{
-	position: fixed;
+	position: relative;
 	background: $color-offwhite;
 	width: 100%;
 	top:0;
@@ -232,7 +232,7 @@ img{max-width:100%;}
 
 /* Pointers */
 .main-pointers{
-	margin:250px auto;
+	margin:130px auto 250px;
 }
 .pointers{
 	list-style: none;
@@ -296,6 +296,7 @@ img{max-width:100%;}
 	}
 	.accordian-content{
 		display: none;
+		display: block;
 		p:last-child{
 			margin-bottom: 0;
 		}
@@ -364,6 +365,8 @@ img{max-width:100%;}
 	z-index: 1;
 	.bg-content{
 		display: none;
+		align-self: flex-end;
+		margin-right: 100px;
 		&.active{
 			display: block;
 		}
