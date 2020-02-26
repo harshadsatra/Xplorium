@@ -185,7 +185,7 @@ img{max-width:100%;}
 
 /* Header */
 .main-header{
-	position: relative;
+	position: fixed;
 	background: $color-offwhite;
 	width: 100%;
 	top:0;
@@ -193,7 +193,7 @@ img{max-width:100%;}
 	left: 0;
 	z-index: 100;
 	font-size: 1rem;
-	@include transition(1s ease all);
+	@include transition(2s ease all);
 	.row{
 		padding:50px 0;
 	}
@@ -202,13 +202,20 @@ img{max-width:100%;}
 	}
 	.font-italic,.logo{
 		opacity: 1;
+		font-size: 18px;
 		@include transition(0.3s ease all);
+	}
+	.font-italic{
+		transition-delay: 2s;
+		-moz-transition-delay: 2s;
+		-webkit-transition-delay: 2s;
 	}
 	#headerTitle{
 		position: absolute;
 		width: 100%;
 		text-align: center;
 		color: $color-red;
+		font-size: 30px;
 	}
 	#logo{
 		width: 350px;
@@ -232,7 +239,7 @@ img{max-width:100%;}
 
 /* Pointers */
 .main-pointers{
-	margin:130px auto 250px;
+	margin:28% auto 250px;
 }
 .pointers{
 	list-style: none;
@@ -367,6 +374,17 @@ img{max-width:100%;}
 		display: none;
 		align-self: flex-end;
 		margin-right: 100px;
+		margin-top: 80px;
+		&.video,&.img{
+			max-width: 43%;
+			video{
+				width: 100%;
+				display: block;
+			}
+		}
+		img{
+			width: 100%;
+		}
 		&.active{
 			display: block;
 		}

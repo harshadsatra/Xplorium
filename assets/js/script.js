@@ -28,7 +28,7 @@ function scrollStoryActivator(){
   ss = $('#scrollActivator').scrollStory({
     debug: false,
     content: '.trigger',
-    triggerOffset: '20%',
+    triggerOffset: '50%',
     autoUpdateOffsets: true,
     itemfocus: function(ev, item){
       console.log('item active', item.index, item.id, item.data, item.type, item.option,ev);
@@ -75,8 +75,8 @@ function headerLoadAnim(){
     tl.to($('#headerTitle'), 2, {opacity:0, ease:Power1.easeInOut})
     tl.to($('#logo'), 2, {opacity:1, ease:Power1.easeInOut})
     tl.set($("#main-header"),{className:"-=main-header"})
-    tl.set($("body"),{className:"-=loaded"});
-    tl.staggerFrom($('.pointers li'), 0.5, {autoAlpha: 0}, 0.5);
+    tl.set($("body"),{className:"-=loaded"})
+    tl.staggerFrom($('.pointers li'), 2, {autoAlpha: 0,ease:Power1.easeInOut}, "#main-header+=2");
     
     $(window).scrollTop(0);
 };
