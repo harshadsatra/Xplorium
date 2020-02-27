@@ -54,9 +54,23 @@ function scrollStoryActivator(){
         $('.bg-content').hide();
         $(item.id).fadeIn();
         if(item.option == 'video'){
-          $(item.id+" video").get(0).play();
+          var playPromise = $(item.id+" video").get(0).play();
+          if (playPromise !== undefined) {
+            playPromise.then(_ => {
+              // Automatic playback started!
+              // Show playing UI.
+            })
+            .catch(error => {
+              // Auto-play was prevented
+              // Show paused UI.
+              alert('Playing Video');
+            });
+          }
         }
-        
+      }
+
+      if(item.type == 'none'){
+        $('.bg-content').hide();
       }
       
     }
@@ -66,7 +80,7 @@ function scrollStoryActivator(){
 function headerLoadAnim(){
   // $('.hiddenBlock').addClass('active');
   var tl = new TimelineMax({
-    onComplete: function(){
+    onStart: function(){
       scrollStoryActivator();
     }
   });
@@ -76,7 +90,8 @@ function headerLoadAnim(){
     tl.to($('#logo'), 2, {opacity:1, ease:Power1.easeInOut})
     tl.set($("#main-header"),{className:"-=main-header"})
     tl.set($("body"),{className:"-=loaded"})
-    tl.staggerFrom($('.pointers li'), 2, {autoAlpha: 0,ease:Power1.easeInOut}, "#main-header+=2");
+    tl.to($('.pointers'), 2, {autoAlpha: 1,ease:Power1.easeInOut});
+    tl.staggerFrom($('.pointers li'), 1, {autoAlpha: 0,ease:Power1.easeInOut}, 1);
     
     $(window).scrollTop(0);
 };
