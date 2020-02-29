@@ -765,7 +765,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px; }
 
 p {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 0px rgba(255, 252, 248, 0.5); }
 
 /* General CSS */
 .text-center {
