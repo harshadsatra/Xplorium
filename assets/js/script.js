@@ -63,7 +63,7 @@ function scrollStoryActivator(){
             .catch(error => {
               // Auto-play was prevented
               // Show paused UI.
-              alert('Playing Video');
+              console.log('Unable to play Video');
             });
           }
         }

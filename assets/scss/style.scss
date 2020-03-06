@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6{
 	line-height: 0.9;
 	margin-bottom: 30px;
 }
-p{margin-bottom:30px;text-shadow: 1px 1px 0px rgba(255, 252, 248, 0.5);}
+p{margin-bottom:30px;text-shadow:1px 0px 0px rgb(255, 252, 248);}
 
 /* General CSS */
 .text-center{text-align:center;}
@@ -149,7 +149,7 @@ img{max-width:100%;}
 .headingBlock{
 	height: 95vh;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	position: relative;
 	flex-direction: column;
@@ -157,7 +157,8 @@ img{max-width:100%;}
 	h2{
 		@include transition(2s ease all);
 		opacity: 0;
-		padding:0 20px 150px;
+		padding: 0;
+		margin:0;
 	}
 	&.active{
 		h2{
@@ -204,6 +205,8 @@ img{max-width:100%;}
 	.font-italic,.logo{
 		opacity: 1;
 		font-size: 18px;
+		display: block;
+		margin-top: 24px;
 		@include transition(0.3s ease all);
 	}
 	.font-italic{
@@ -268,7 +271,7 @@ img{max-width:100%;}
     transform: rotate(-90deg) translateX(-50%) translateY(-271px);
     display: block;
     position: absolute;
-    left: 0px;
+    left: -10px;
     font-size: 1rem;
     width: 500px;
     margin-top: 5px;
@@ -338,7 +341,7 @@ img{max-width:100%;}
 	background: $color-offwhite;
 	margin:0 auto;
 	display: block;
-	padding:30px;
+	padding:53px 45px 45px;
 	text-align: left;
 	h3{
 		font-size: 3rem;
@@ -348,7 +351,7 @@ img{max-width:100%;}
 	}
 	.fill-btn{
 		position: absolute;
-		bottom:50px;
+		bottom:45px;
 		left:30px;
 		right:auto;
 		margin:auto;
@@ -395,9 +398,12 @@ img{max-width:100%;}
 
 /* CTA */
 .cta-section{
-	margin:250px auto;
+	margin:0px auto;
 	position: relative;
 	z-index: 2;
+	.row{
+		height: 100vh;
+	}
 }
 
 .trigger{
