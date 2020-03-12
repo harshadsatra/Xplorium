@@ -1132,28 +1132,28 @@ img {
 
 .background-block {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 45%;
-  height: 100%;
+  top: 50px;
+  right: 100px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 4; }
+  z-index: 4;
+  bottom: 0;
+  margin: auto; }
   .background-block .share-overlay {
     position: absolute;
     left: auto;
     right: 0;
-    width: calc(100% - 100px);
-    height: calc(100% - 80px);
+    width: 100%;
+    height: 100%;
     background: rgba(255, 252, 248, 0.8);
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    margin-right: 100px;
     bottom: 0;
     opacity: 0;
     visibility: hidden; }
@@ -1174,8 +1174,6 @@ img {
   .background-block .bg-content {
     display: none;
     align-self: flex-end;
-    margin-right: 100px;
-    margin-top: 80px;
     max-width: 100%;
     position: relative; }
     .background-block .bg-content:after {
@@ -1195,7 +1193,7 @@ img {
       display: block; }
     .background-block .bg-content.active {
       display: block; }
-  .background-block:hover .share-overlay {
+  .background-block.active:hover .share-overlay {
     opacity: 1;
     visibility: visible; }
 
@@ -1227,14 +1225,30 @@ img {
       top: 0; }
 
 @media screen and (max-width: 1025px) {
+  .container {
+    max-width: 85%; }
+
   .pointers {
     font-size: 4.1rem; }
     .pointers li {
-      margin-top: -40px; } }
+      margin-top: -40px; }
+
+  .background-block {
+    right: 50px;
+    width: 400px;
+    height: 400px; } }
+@media screen and (max-width: 769px) {
+  .background-block {
+    right: 50px;
+    width: 300px;
+    height: 300px; } }
 .hide-desktop {
   display: none; }
 
 @media screen and (max-width: 650px) {
+  .container {
+    max-width: 100%; }
+
   .hide-desktop {
     display: block !important; }
 
@@ -1304,9 +1318,10 @@ img {
     bottom: 0;
     height: auto;
     width: 100%;
-    justify-content: flex-end;
     z-index: 2;
-    padding: 0 30px; }
+    padding: 0 30px;
+    right: 0;
+    background: inherit; }
     .background-block .share-overlay {
       width: 100%;
       height: 100%;

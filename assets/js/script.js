@@ -33,7 +33,10 @@ function scrollStoryActivator(){
         }
       }
 
+      $('.background-block').removeClass('active');
+
       if(item.type == 'content'){
+        $('.background-block').addClass('active');
         $('.bg-content').hide();
         $(item.id).fadeIn();
         if(item.option == 'video'){
@@ -96,7 +99,9 @@ $('.cta-block').click(function(e) {
 $('#play-video').on('click',function(e){
   e.preventDefault();
   $('.loader').fadeOut();
-  headerLoadAnim();
+  setTimeout(function(){
+    headerLoadAnim();
+  },1000);
 });
 
 jQuery('.share-overlay a').click(function() {
