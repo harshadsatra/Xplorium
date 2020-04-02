@@ -982,7 +982,8 @@ img {
   .main-header .row {
     padding: 50px 0; }
   .main-header .container, .main-header .row {
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
   .main-header .font-italic, .main-header .logo {
     opacity: 1;
     font-size: 18px;
@@ -1013,6 +1014,14 @@ img {
     height: 100vh; }
     .main-header.on-load .font-italic, .main-header.on-load .logo {
       opacity: 0; }
+  .main-header .overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .main-header .overlay-header .row {
+      margin: 0; }
 
 /* Footer */
 .main-footer {
@@ -1229,7 +1238,7 @@ img {
     max-width: 85%; }
 
   .pointers {
-    font-size: 4.1rem; }
+    font-size: 3.7rem; }
     .pointers li {
       margin-top: -40px; }
 
@@ -1238,10 +1247,28 @@ img {
     width: 400px;
     height: 400px; } }
 @media screen and (max-width: 769px) {
+  .container {
+    max-width: 95%; }
+
+  .main-header .font-italic, .main-header .logo {
+    font-size: 16px;
+    margin-top: 12px; }
+
+  .text-rotate {
+    display: none; }
+
   .background-block {
     right: 50px;
     width: 300px;
-    height: 300px; } }
+    height: 300px; }
+
+  .pointers li {
+    margin-top: 0;
+    margin-bottom: 40px; }
+
+  .pointers li .left, .pointers li .right {
+    display: block;
+    line-height: 1; } }
 .hide-desktop {
   display: none; }
 
@@ -1288,18 +1315,27 @@ img {
 
   .main-header {
     height: 86px;
-    text-align: center; }
+    text-align: center;
+    transition: 2s cubic-bezier(0.96, 0.81, 0.58, 1) all; }
     .main-header .row {
-      padding: 0; }
+      padding: 0;
+      margin: 0;
+      position: relative; }
+    .main-header .col-lg-6.col-md-4.text-center {
+      position: unset; }
     .main-header #logo {
-      width: 220px;
-      margin-top: -200px; }
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 220px; }
     .main-header .font-italic {
       display: block;
       text-align: center; }
     .main-header #headerTitle {
-      width: 200px;
-      margin-top: -200px; }
+      width: 200px; }
 
   .main-pointers {
     margin-top: 150px; }
