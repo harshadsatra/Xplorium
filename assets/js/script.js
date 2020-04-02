@@ -41,7 +41,7 @@ function scrollStoryActivator(){
         $(item.id).fadeIn();
         if(item.option == 'video'){
           var playPromise = $(item.id+" video");
-          console.log(playPromise);
+          // console.log(playPromise);
           var ua = navigator.userAgent.toLowerCase(); 
           if (ua.indexOf('safari') != -1) { 
             if (ua.indexOf('chrome') > -1) {
