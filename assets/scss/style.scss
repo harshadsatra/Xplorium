@@ -357,7 +357,6 @@ img{max-width:100%;}
 		left: 0;
 		width: 100%;
 		height: 100%;
-		pointer-events:none;
 		.row{
 			margin:0;
 		}
@@ -691,7 +690,7 @@ img{max-width:100%;}
 		.mobile.link{
 			position: absolute;
 			right:0;
-			top:20px;
+			top:8px;
 			font-size: 12px;
 			margin:0;
 		}

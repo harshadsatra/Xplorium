@@ -1,0 +1,242 @@
+{
+	"1": {
+		"question": "You need to hire a team of highly intelligent people to be able to scale your business.",
+		"isReverse": false
+	},
+	"2": {
+		"question": "It's okay to borrow money if it has the chance to increase your success in the future",
+		"isReverse": true
+	},
+	"3": {
+		"question": "I wait until a product is well tested before trying it out myself",
+		"isReverse": false
+	},
+	"4": {
+		"question": "The most successful entrepreneurs are those that have no constraints/barriers",
+		"isReverse": false
+	},
+	"5": {
+		"question": "People tend to be hestitant about the ideas I propose",
+		"isReverse": false
+	},
+	"6": {
+		"question": "It is okay to work on tasks even if the end goal is not clear",
+		"isReverse": false
+	},
+	"7": {
+		"question": "When starting your company, it is important to have junior members/interns who can do the smaller, monotonous tasks",
+		"isReverse": false
+	},
+	"8": {
+		"question": "My productivity is high when there are rewards/appreciation waiting for me",
+		"isReverse": false
+	},
+	"9": {
+		"question": "I work on tasks as and when I think of them",
+		"isReverse": false
+	},
+	"10": {
+		"question": "In the early days of your company, it is best to hire experts to do what you don't know how to do",
+		"isReverse": false
+	},
+	"11": {
+		"question": "The content of a presentation is more important than the look and feel.",
+		"isReverse": false
+	},
+	"12": {
+		"question": "It is important to have a commanding voice to get people to follow your lead ",
+		"isReverse": false
+	},
+	"13": {
+		"question": "In order to inspire someone, you need to have gone through similar experiences as they have",
+		"isReverse": false
+	},
+	"14": {
+		"question": "Small talk is a waste of time",
+		"isReverse": false
+	},
+	"15": {
+		"question": "If you think someone is going to say no, it's better not to ask",
+		"isReverse": false
+	},
+	"16": {
+		"question": "The secret to overcoming a challenge is working harder",
+		"isReverse": false
+	},
+	"17": {
+		"question": "Some people just have better luck than others",
+		"isReverse": false
+	},
+	"18": {
+		"question": "Failure is not an option when you're an entrepreneur",
+		"isReverse": false
+	},
+	"19": {
+		"question": "If you've thought out all the pros and cons, there is no need for a plan B",
+		"isReverse": false
+	},
+	"20": {
+		"question": "The best people to test out your idea/product are those who were part of the ideating phase with you",
+		"isReverse": false
+	},
+	"21": {
+		"question": "It is difficult to maintain quality if you scale your business",
+		"isReverse": false
+	},
+	"22": {
+		"question": "A bird in the hand is better than two in the bush",
+		"isReverse": false
+	},
+	"23": {
+		"question": "It is better to make products that customers are already used to using",
+		"isReverse": false
+	},
+	"24": {
+		"question": "To implement the ideas you want, it is often required to go above budget",
+		"isReverse": false
+	},
+	"25": {
+		"question": "When faced with a problem, I try to follow what others have done before me",
+		"isReverse": false
+	},
+	"26": {
+		"question": "In a dynamic environment, goals keep changing",
+		"isReverse": false
+	},
+	"27": {
+		"question": "It is important to delegate tasks as early on in the company's life cycle as possible",
+		"isReverse": false
+	},
+	"28": {
+		"question": "When starting a new company, it is important to have someone who can motivate you to reach your targets",
+		"isReverse": false
+	},
+	"29": {
+		"question": "I often find myself working on tasks that I hadn't anticipated",
+		"isReverse": false
+	},
+	"30": {
+		"question": "It takes at least 2-3 months to master a new skill",
+		"isReverse": false
+	},
+	"31": {
+		"question": "People ask a lot of irrelevant question when I'm making a presentation",
+		"isReverse": false
+	},
+	"32": {
+		"question": "Successful leaders are born, not created ",
+		"isReverse": false
+	},
+	"33": {
+		"question": "When selling my ideas, it is useful to first talk about the amount of effort required to accomplish them",
+		"isReverse": false
+	},
+	"34": {
+		"question": "I often find myself having casual conversations with people waiting in lines with me ",
+		"isReverse": true
+	},
+	"35": {
+		"question": "You need to make sure you have a strong relationship with someone before you ask them for help",
+		"isReverse": false
+	},
+	"36": {
+		"question": "Once you've finalised on an idea to work on, it should be taken to completion no matter what",
+		"isReverse": false
+	},
+	"37": {
+		"question": "Sometimes when I'm pursuing a challenge my environment holds me ",
+		"isReverse": false
+	},
+	"38": {
+		"question": "Entrepreneurship is a mix of extremely positive moments and extremely negative ones",
+		"isReverse": false
+	},
+	"39": {
+		"question": "Spending time coming up with a fallback plan, in case things fail is a very pessimistic approach to entrepreneurship",
+		"isReverse": false
+	},
+	"40": {
+		"question": "Most people are quick to reject an idea because they don't take the time to understand it",
+		"isReverse": false
+	},
+	"41": {
+		"question": "When I accomplish something, it is difficult for me to explain how I've done it - it just comes to me naturally",
+		"isReverse": false
+	},
+	"42": {
+		"question": "It is important to save as much money as possible in the early days of your business",
+		"isReverse": false
+	},
+	"43": {
+		"question": "The best way to understand what your target audience needs is to just ask them",
+		"isReverse": false
+	},
+	"44": {
+		"question": "Constraints don't matter when you're working on a new idea",
+		"isReverse": false
+	},
+	"45": {
+		"question": "I'm often in situations where I don't have the right tools to solve my problems",
+		"isReverse": false
+	},
+	"46": {
+		"question": "I find fixed goals limiting to my creative process",
+		"isReverse": false
+	},
+	"47": {
+		"question": "Innovating/coming up with new ideas is more important than focusing on implementation of existing ones",
+		"isReverse": false
+	},
+	"48": {
+		"question": "The good thing about being an entrepreneur is that there are no fixed deadlines ",
+		"isReverse": false
+	},
+	"49": {
+		"question": "People who make daily to-do lists are too rigid to be entrepreneurs",
+		"isReverse": false
+	},
+	"50": {
+		"question": "The best way to develop a new skill is to learn about it until you know everything there is to know about it",
+		"isReverse": false
+	},
+	"51": {
+		"question": "Some of my teachers/professors don't remember my name.",
+		"isReverse": false
+	},
+	"52": {
+		"question": "When people have made up their mind, it is difficult to convince them otherwise",
+		"isReverse": false
+	},
+	"53": {
+		"question": "If someone doesn't believe in your organization's vision, there is no point trying to change their mind",
+		"isReverse": false
+	},
+	"54": {
+		"question": "I have a fixed agenda when reaching out to new people",
+		"isReverse": false
+	},
+	"55": {
+		"question": "You should only ask someone for help when you can do something for them in return",
+		"isReverse": false
+	},
+	"56": {
+		"question": "Changing your idea when the going gets tough is a sign of weakness",
+		"isReverse": false
+	},
+	"57": {
+		"question": "People who say they make their own luck are not very realistic",
+		"isReverse": false
+	},
+	"58": {
+		"question": "It is difficult to stay motivated after suffering multiple failures",
+		"isReverse": false
+	},
+	"59": {
+		"question": "An idea that fails is a sign of an idea that wasn't well thought out",
+		"isReverse": false
+	},
+	"60": {
+		"question": "If you believe in your idea, it doesn't matter what anyone else thinks",
+		"isReverse": false
+	}
+}
