@@ -533,12 +533,12 @@ img{max-width:100%;}
 					padding: 8px;
 					display: block;
 					svg{
-						height: 45px;
-						fill: $color-offblack;
+						height: 35px;
+						fill:$color-red;
 					}
 					&:hover{
 						svg{
-							fill:$color-red;
+							fill: $color-offblack;
 						}
 					}
 				}
