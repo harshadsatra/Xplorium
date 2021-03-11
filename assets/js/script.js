@@ -12,7 +12,7 @@ function scrollStoryActivator(){
   ss = $('#scrollActivator').scrollStory({
     debug: false,
     content: '.trigger',
-    triggerOffset: '75%',
+    triggerOffset: '70%',
     autoUpdateOffsets: true,
     itemfocus: function(ev, item){
       var item = item.data;
